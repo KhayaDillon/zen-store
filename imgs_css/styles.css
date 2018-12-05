@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+/*  Filename: styles.css
+	Zen Store Styles
+	Author: Khaya
+	Created on 6/8/2017
+*/
+
+
+/* Shared Styles */
+
+html {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	background-color: #efe7b7;
+	background-image: url(background.png);
+	background-attachment: fixed;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+div#bar {
+	padding: 0.5em 2em;
+	background-color: rgba(0,0,0, 0.8);
+	color: rgb(168,255,230);
+	font-size: 1.2em;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+}
+
+nav ul {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+nav li {
+	flex: 1 1 auto;
+	padding: 0.5em 1.5em;
+	font-size: 1em;
+}
+
+nav > ul > li > a {
+	color: rgb(168,255,230);
+	letter-spacing: 0.15em;
+	text-shadow: rgb(168,255,230) -5px 2px 15px;
+	transition: color 0.5s ease-in,
+				letter-spacing 0.5s ease-out;
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+	color: rgba(255,255,255, 0.5);
+	text-shadow: rgb(84,127,115) -5px 2px 15px;
+	letter-spacing: 0.2em;
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+	font-size: 5em;
+	text-shadow: #2dc97d 0px 0px 3px,
+				rgb(84,127,115) 2px 2px 2px,
+				rgb(84,127,115) -3px 2px 10px;
+	margin: 0px auto 0px auto;
+	padding-top: 0.8em;
+}
+
+h3 {
+	font-size: 2em;
+	padding-bottom: 1em;
+	color: black;
+	text-shadow: #2dc97d 0px 0px 3px,
+				rgb(84,127,115) -3px 3px 5px;
+				rgb(84,127,115) 0px 0px 55px;
+}
+
+div#empty
+	{height: 450px;}
+
+div#empty2
+	{height: 20px;}
+
+div#empty3
+	{height: 150px;}
+
+h4 {
+	font-size: 1.2em;
+	padding-bottom: 1em;
+	padding-top: 2em;
+	text-shadow: rgb(84,127,115) -5px 2px 15px;
+}
+
+section p {
+	line-height: 1.3em;
+	padding: 0.3em 0px 3em 0px;
+}
+
+section, div[class^="col-"] {
+	background-color: #2dc97d;
+	padding-left: 4em;
+	padding-right: 4em;
+
+	border-right: 1px solid rgb(84,127,115);
+	border-left: 1px solid #33e38d;
+	border-radius: 3px;
+}
+
+section, aside {
+	margin: 0px auto;
+	max-width: 960px;
+	min-width: 640px;
+	width: 100%;
+
+}
+
+section h2, div.col-1-4 h2 {
+	padding: 2em 0em 1em 0em;
+	font-size: 2.3em;
+	text-align: center;
+	text-shadow: rgb(84,127,115) -5px 2px 15px;
+}
+
+section#sale div {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+section#sale figure {
+	border: 1px solid black;
+	margin: 2em 0.5em 2em 0.5em;
+	flex: 4 1 350px;
+}
+
+figure img {
+	display: block;
+	width: 100%;
+}
+
+section#sale figcaption {
+	font-size: 1.2em;
+	padding: 5px;
+}
+
+div[class^="col-"] {
+	float: left;
+}
+
+div.col-3-4 {
+	width: 66.67%;
+	padding-bottom: 2em;
+}
+
+div.col-1-4 {
+	width: 33.33%;
+	padding-bottom: 4.3em;
+}
+
+div.col-3-4 h2 {
+	padding: 2em 0em 1em 1em;
+	font-size: 2.3em;
+	text-shadow: rgb(84,127,115) -5px 2px 15px;
+}
+
+div.col-3-4 li {
+	line-height: 4em;
+	font-size: 1.5em;
+	list-style-image: url(lotusbullet.png);
+	list-style-position: inside;
+}
+
+div.col-3-4 ul {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+div.col-3-4 li {
+	flex: 4 1 300px;
+}
+
+div.col-3-4 figure {
+	padding-top: 15px;
+	flex: 1 1 60px;
+}
+
+div.col-1-4 div {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+div.col-1-4 figure {
+	border: 1px solid black;
+	margin: 5px;
+	flex: 1 1 100px;
+}
+
+footer {
+	background-color: rgba(0,0,0, 0.9);
+	padding: 3em;
+	clear: both;
+
+	margin: 0px auto;
+	width: 100%;
+	max-width: 865px;
+	min-width: 640px;
+
+	position: relative;
+	top: 8px;
+}
+
+footer label {
+	color: rgb(168,255,230);
+	font-size: 1.2em;
+}
