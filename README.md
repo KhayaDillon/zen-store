@@ -6,3 +6,5 @@ The homepage of a Zen/Meditation Supply website I started for a relative, but wi
 ## Usage
 
 Clone repo and open the index.html in the browser, preferably Google Chrome.
+
+![alt text](http://i68.tinypic.com/e8adkk.png)
